@@ -1,5 +1,5 @@
 document.getElementById('reserva-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita que el formulario se envíe de la forma tradicional
+    event.preventDefault();
 
     const local = document.getElementById('local').value;
     const nombre = document.getElementById('nombre').value;
@@ -8,26 +8,22 @@ document.getElementById('reserva-form').addEventListener('submit', function(even
     const fecha = document.getElementById('fecha').value;
     const hora = document.getElementById('hora').value;
 
-    // Aquí debes enviar los datos al backend (Node.js, PHP, etc.)
-    // Puedes usar fetch() o XMLHttpRequest para hacer la petición
+    // Construir el cuerpo del correo
+    const body = `
+        Local: ${local}
+        Nombre: ${nombre}
+        Teléfono: ${telefono}
+        Cantidad de personas: ${cantidad}
+        Fecha: ${fecha}
+        Hora: ${hora}
+    `;
 
-    console.log('Datos de la reserva:', { local, nombre, telefono, cantidad, fecha, hora });
+    // Codificar el cuerpo del correo para la URL
+    const encodedBody = encodeURIComponent(body);
 
-    // Ejemplo de cómo podrías enviar los datos con fetch():
-    fetch('/reservar', { // Reemplaza '/reservar' con la ruta de tu backend
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ local, nombre, telefono, cantidad, fecha, hora })
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Respuesta del servidor:', data);
-        alert('¡Reserva enviada con éxito!'); // Muestra un mensaje de éxito
-    })
-    .catch(error => {
-        console.error('Error al enviar la reserva:', error);
-        alert('Error al enviar la reserva. Inténtalo de nuevo.'); // Muestra un mensaje de error
-    });
+    // Crear el enlace mailto
+    const mailtoLink = `mailto:Joaquin.lrc.09@gmail.com?subject=Nueva Reserva&body=${encodedBody}`;
+
+    // Redirigir al enlace mailto
+    window.location.href = mailtoLink;
 });

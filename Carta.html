@@ -6,64 +6,87 @@
     <title>Carta | Sofá Café – Restaurante, Café y Bar en Lima</title>
     <meta name="description" content="Disfruta nuestra variada carta pensada para compartir buenos momentos en Sofá Café. Fondos, entradas, postres, waffles y cócteles en Lima.">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="Carta.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Flecha de retroceso -->
-    <div style="padding:24px 0 0 24px;">
-    <a href="main.html" style="text-decoration:none;color:#a0522d;font-size:1.8em;display:inline-flex;align-items:center;gap:8px;">
-        <span style="font-size:1.5em;">&#8592;</span> <!-- Flecha izquierda Unicode -->
-        <span style="font-size:1em;">Volver</span>
-    </a>
-    </div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="main.html" class="navbar-logo">
+                <img src="./LOCALES/LOGOSOFACAFE.png" alt="Sofá Café" height="80">
+            </a>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="main.html">Inicio</a></li>
+                <li><a href="Carta.html" class="active">Carta</a></li>
+                <li><a href="Promociones.html">Promociones</a></li>
+                <li><a href="Ubicaciones.html">Ubicaciones</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Libro de Reclamaciones.html">Libro de Reclamaciones</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Reservas.html" class="navbar-btn">Reservas</a></li>
+                <li>
+                    <a href="https://facebook.com/Sofacafeoficial" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" class="navbar-icon"></a>
+                    <a href="https://tiktok.com/@sofacafeoficial" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="Tiktok" class="navbar-icon"></a>
+                    <a href="https://instagram.com/sofacafeoficial/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="navbar-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Carta Section -->
-    <section class="carta-section" style="padding:80px 0 40px 0; background:#fff;">
-        <div class="carta-container" style="max-width:900px;margin:0 auto;padding:0 24px;">
-            <h1 style="font-size:2.2em;font-weight:700;color:#a0522d;margin-bottom:18px;">Nuestra variada carta pensada en cada momento del día</h1>
-            <p style="font-size:1.15em;color:#444;margin-bottom:32px;">
+    <section class="carta-section">
+        <div class="carta-container">
+            <h1>Nuestra variada carta pensada en cada momento del día</h1>
+            <p>
                 Disfruta nuestra variada carta pensada para compartir buenos momentos:<br>
                 Fondos, entradas, postres, waffles y cócteles en un ambiente cálido y acogedor.
             </p>
-            <div class="carta-descargable" style="margin-bottom:32px;">
-                <a href="Carta-SofaCafe.pdf" target="_blank" style="display:inline-block;background:#a0522d;color:#fff;padding:12px 28px;border-radius:24px;font-weight:700;text-decoration:none;">
+            <div class="carta-descargable">
+                <a href="Carta-SofaCafe.pdf" target="_blank">
                     👉 Mira la carta completa aquí (PDF)
                 </a>
             </div>
             <div class="carta-lista">
-                <h2 style="font-size:1.3em;color:#a0522d;margin-bottom:12px;">Ejemplo de categorías</h2>
-                <ul style="list-style:none;padding:0;">
-                    <li style="margin-bottom:18px;">
-                        <strong style="font-size:1.1em;">Fondos</strong>
-                        <ul style="margin:8px 0 0 18px;">
+                <h2>Ejemplo de categorías</h2>
+                <ul>
+                    <li>
+                        <strong>Fondos</strong>
+                        <ul>
                             <li>Lomo saltado</li>
                             <li>Pasta Alfredo</li>
                             <li>Pollo a la plancha</li>
                         </ul>
                     </li>
-                    <li style="margin-bottom:18px;">
-                        <strong style="font-size:1.1em;">Entradas</strong>
-                        <ul style="margin:8px 0 0 18px;">
+                    <li>
+                        <strong>Entradas</strong>
+                        <ul>
                             <li>Ensalada César</li>
                             <li>Tequeños</li>
                         </ul>
                     </li>
-                    <li style="margin-bottom:18px;">
-                        <strong style="font-size:1.1em;">Postres</strong>
-                        <ul style="margin:8px 0 0 18px;">
+                    <li>
+                        <strong>Postres</strong>
+                        <ul>
                             <li>Cheesecake</li>
                             <li>Brownie con helado</li>
                         </ul>
                     </li>
-                    <li style="margin-bottom:18px;">
-                        <strong style="font-size:1.1em;">Waffles</strong>
-                        <ul style="margin:8px 0 0 18px;">
+                    <li>
+                        <strong>Waffles</strong>
+                        <ul>
                             <li>Waffle clásico</li>
                             <li>Waffle con frutas</li>
                         </ul>
                     </li>
-                    <li style="margin-bottom:18px;">
-                        <strong style="font-size:1.1em;">Cócteles</strong>
-                        <ul style="margin:8px 0 0 18px;">
+                    <li>
+                        <strong>Cócteles</strong>
+                        <ul>
                             <li>Pisco Sour</li>
                             <li>Mojito</li>
                         </ul>
@@ -74,8 +97,8 @@
     </section>
 
     <!-- CTA Reserva -->
-    <section style="background:#f8f8f8;padding:32px 0;text-align:center;">
-        <a href="https://wa.link/pp0dpc" target="_blank" style="background:#a0522d;color:#fff;padding:16px 38px;border-radius:32px;font-weight:700;font-size:1.15em;text-decoration:none;">
+    <section class="cta-reserva">
+        <a href="https://wa.link/pp0dpc" target="_blank">
             Explora nuestra carta y reserva tu mesa
         </a>
     </section>
@@ -85,8 +108,8 @@
         <div class="footer-container">
             <div class="footer-brand">
                 <div class="footer-logo">
-                    <span style="font-size:2.5em;color:#ffc83d;">●</span>
-                    <span style="font-size:2em;font-weight:700;margin-left:8px;">Sofa Cafe</span>
+                    <span>●</span>
+                    <span>Sofa Cafe</span>
                 </div>
                 <p class="footer-desc">
                     Sofá Café – Restaurante acogedor en Lima. Comfort food, postres, waffles, café y happy hour en Barranco, Magdalena, Surco y Miraflores.
@@ -104,8 +127,8 @@
                 </div>
                 <div>
                     <div class="footer-title">Horarios de Atención</div>
-                    <div style="display:flex;align-items:center;gap:8px;">
-                        <span style="font-size:1.3em;color:#ffc83d;">●</span>
+                    <div class="horarios">
+                        <span>●</span>
                         <span>Lunes a Domingo</span>
                     </div>
                     <div>8AM - 11PM</div>
@@ -113,6 +136,6 @@
             </div>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="Carta.js"></script>
 </body>
 </html>

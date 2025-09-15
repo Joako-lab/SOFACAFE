@@ -1,51 +1,68 @@
-<section id="reservas-form" style="padding:40px 0;background:#f8f8f8;text-align:center;">
-    <h2 style="font-size:1.8em;color:#a0522d;margin-bottom:24px;">Reserva tu mesa</h2>
-    <form id="reserva-form" style="max-width:600px;margin:0 auto;padding:24px;border-radius:12px;background:#fff;box-shadow:0 4px 18px rgba(0,0,0,0.08);">
-        <label for="local" style="display:block;margin-bottom:8px;font-weight:500;text-align:left;">Local:</label>
-        <select id="local" name="local" style="width:100%;padding:8px;margin-bottom:16px;border-radius:6px;border:1px solid #ccc;">
-            <option value="barranco">Barranco</option>
-            <option value="magdalena">Magdalena</option>
-            <option value="surco">Surco</option>
-            <option value="miraflores">Miraflores</option>
-        </select>
-
-        <label for="nombre" style="display:block;margin-bottom:8px;font-weight:500;text-align:left;">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" style="width:100%;padding:8px;margin-bottom:16px;border-radius:6px;border:1px solid #ccc;" required>
-
-        <label for="telefono" style="display:block;margin-bottom:8px;font-weight:500;text-align:left;">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" style="width:100%;padding:8px;margin-bottom:16px;border-radius:6px;border:1px solid #ccc;" required>
-
-        <label for="cantidad" style="display:block;margin-bottom:8px;font-weight:500;text-align:left;">Cantidad de personas:</label>
-        <input type="number" id="cantidad" name="cantidad" min="1" style="width:100%;padding:8px;margin-bottom:16px;border-radius:6px;border:1px solid #ccc;" required>
-
-        <label for="fecha" style="display:block;margin-bottom:8px;font-weight:500;text-align:left;">Fecha:</label>
-        <input type="date" id="fecha" name="fecha" style="width:100%;padding:8px;margin-bottom:16px;border-radius:6px;border:1px solid #ccc;" required>
-
-        <label for="hora" style="display:block;margin-bottom:8px;font-weight:500;text-align:left;">Hora:</label>
-        <input type="time" id="hora" name="hora" style="width:100%;padding:8px;margin-bottom:16px;border-radius:6px;border:1px solid #ccc;" required>
-
-        <button type="submit" style="background:#a0522d;color:#fff;padding:12px 24px;border:none;border-radius:8px;font-weight:700;cursor:pointer;">Reservar</button>
-    </form>
-</section> 
-
-    <!-- CTA Contacto -->
-    <section style="background:#f8f8f8;padding:32px 0;text-align:center;">
-        <a href="https://wa.link/pp0dpc" target="_blank" style="background:#a0522d;color:#fff;padding:16px 38px;border-radius:32px;font-weight:700;font-size:1.15em;text-decoration:none;">
-            ¿Prefieres reservar por WhatsApp? Contáctanos aquí
-        </a>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer-section">
-        <div class="footer-container">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    <span style="font-size:2.5em;color:#ffc83d;">●</span>
-                    <span style="font-size:2em;font-weight:700;margin-left:8px;">Sofa Cafe</span>
-                </div>
-                <p class="footer-desc">
-                    Sofá Café – Restaurante acogedor en Lima. Comfort food, postres, waffles, café y happy hour en Barranco, Magdalena, Surco y Miraflores.
-                </p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu mesa | Sofá Café</title>
+    <link rel="stylesheet" href="Reservas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <img src="./LOCALES/LOGOSOFACAFE.png" alt="Sofá Café" height="100">
             </div>
-            <div class="footer-links">
-                <div>
+            <!-- Botón hamburguesa -->
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="Carta.html">Carta</a></li>
+                <li><a href="Promociones.html">Promociones</a></li>
+                <li><a href="Locales.html">Locales</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Libro de Reclamaciones.html">Libro de Reclamaciones</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+                <li><a href="Reservas.html" class="navbar-btn">Reservas</a></li>
+                <li>
+                    <a href="https://facebook.com/Sofacafeoficial" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" class="navbar-icon"></a>
+                    <a href="https://tiktok.com/@sofacafeoficial" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tiktok.svg" alt="Tiktok" class="navbar-icon"></a>
+                    <a href="https://instagram.com/sofacafeoficial/" target="_blank"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="navbar-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section id="reservas-form">
+        <h2>Reserva tu mesa</h2>
+        <form id="reserva-form">
+            <label for="local">Local:</label>
+            <select id="local" name="local">
+                <option value="barranco">Barranco</option>
+                <option value="magdalena">Magdalena</option>
+                <option value="surco">Surco</option>
+                <option value="miraflores">Miraflores</option>
+            </select>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="cantidad">Cantidad de personas:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </section> 
+</body>
+</html>

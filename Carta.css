@@ -1,0 +1,243 @@
+/* Carta */
+body {
+    /* Asegúrate de que la ruta sea correcta */
+    background: url("./COMIDA/DSC_0141.png") center/cover no-repeat fixed;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-blend-mode: overlay;
+    min-height: 100vh; /* Asegura que el fondo cubra toda la pantalla */
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.navbar-logo img {
+    height: 60px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links li {
+    margin-left: 20px;
+}
+
+.navbar-links li:first-child {
+    margin-left: 0;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffc83d;
+}
+
+.navbar-btn {
+    background-color: #ffc83d;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-icon:hover {
+    transform: scale(1.2);
+}
+
+.retroceso {
+    padding:24px 0 0 24px;
+}
+
+.retroceso a {
+    text-decoration:none;
+    color:#a0522d;
+    font-size:1.8em;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+}
+
+.retroceso a span {
+    font-size:1.5em;
+}
+
+.carta-section {
+    padding:80px 0 40px 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.carta-container {
+    max-width:900px;
+    margin:0 auto;
+    padding:0 24px;
+}
+
+.carta-container h1 {
+    font-size:2.2em;
+    font-weight:700;
+    color:#a0522d;
+    margin-bottom:18px;
+}
+
+.carta-container p {
+    font-size:1.15em;
+    color:#444;
+    margin-bottom:32px;
+}
+
+.carta-descargable {
+    margin-bottom:32px;
+}
+
+.carta-descargable a {
+    display:inline-block;
+    background:#a0522d;
+    color:#fff;
+    padding:12px 28px;
+    border-radius:24px;
+    font-weight:700;
+    text-decoration:none;
+}
+
+.carta-lista h2 {
+    font-size:1.3em;
+    color:#a0522d;
+    margin-bottom:12px;
+}
+
+.carta-lista ul {
+    list-style:none;
+    padding:0;
+}
+
+.carta-lista li {
+    margin-bottom:18px;
+}
+
+.carta-lista li strong {
+    font-size:1.1em;
+}
+
+.carta-lista li ul {
+    margin:8px 0 0 18px;
+}
+
+.cta-reserva {
+    background:#f8f8f8;
+    padding:32px 0;
+    text-align:center;
+}
+
+.cta-reserva a {
+    background:#a0522d;
+    color:#fff;
+    padding:16px 38px;
+    border-radius:32px;
+    font-weight:700;
+    font-size:1.15em;
+    text-decoration:none;
+}
+
+.footer-section {
+    background:#333;
+    color:#fff;
+    padding:40px 0;
+}
+
+.footer-container {
+    max-width:900px;
+    margin:0 auto;
+    padding:0 24px;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+.footer-brand {
+    flex:1;
+}
+
+.footer-logo {
+    font-size:2em;
+    font-weight:700;
+    margin-bottom:16px;
+}
+
+.footer-logo span:first-child {
+    color:#ffc83d;
+}
+
+.footer-desc {
+    font-size:0.9em;
+    line-height:1.5;
+}
+
+.footer-links {
+    flex:1;
+    display:flex;
+    justify-content:space-around;
+}
+
+.footer-links div {
+    margin-right:20px;
+}
+
+.footer-title {
+    font-size:1.1em;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.footer-links a {
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    margin-bottom:8px;
+}
+
+.footer-links a:hover {
+    text-decoration:underline;
+}
+
+.horarios {
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.horarios span:first-child {
+    font-size:1.3em;
+    color:#ffc83d;
+}
