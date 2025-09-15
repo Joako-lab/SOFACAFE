@@ -16,6 +16,8 @@ body {
     left: 0;
     z-index: 100;
     box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    height: 100px;
+    min-height: 100px;
 }
 .navbar-container {
     max-width: 1200px;
@@ -24,10 +26,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
-    height: 70px;
+    height: 100px;
+    min-height: 100px;
 }
 .navbar-logo img {
-    height: 54px;
+    height: 100px;
     vertical-align: middle;
 }
 .navbar-links {
@@ -40,6 +43,12 @@ body {
 }
 .navbar-links li {
     position: relative;
+}
+.navbar-links li:nth-child(5) a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .navbar-links a {
     color: #fff;
@@ -75,6 +84,10 @@ body {
     vertical-align: middle;
     filter: brightness(0) invert(1);
     transition: filter 0.2s;
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
 }
 .navbar-icon:hover {
     filter: brightness(1) invert(0.2) sepia(1) hue-rotate(-30deg) saturate(5);
@@ -83,41 +96,32 @@ body {
 /* Responsive Navbar */
 @media (max-width: 900px) {
     .navbar-container {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
         height: auto;
         padding: 0 10px;
     }
     .navbar-logo {
-        margin: 10px 0;
+        margin: 10px 0 10px 0;
+    }
+    .navbar-toggle {
+        display: flex;
+        margin-left: 0;
     }
     .navbar-links {
+        display: none;
         flex-direction: column;
         width: 100%;
-        gap: 0;
+        background: #181818;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 200;
+        padding-bottom: 18px;
     }
-    .navbar-links li {
-        width: 100%;
-        margin: 0;
-    }
-    .navbar-links a,
-    .navbar-btn {
-        display: block;
-        width: 100%;
-        text-align: left;
-        padding: 12px 10px;
-        border-radius: 0;
-        margin: 0;
-    }
-    .navbar-links li:last-child {
+    .navbar-links.active {
         display: flex;
-        gap: 10px;
-        justify-content: flex-start;
-        padding: 10px 0 10px 10px;
-    }
-    .navbar-icon {
-        margin-left: 0;
-        margin-right: 10px;
     }
 }
 
@@ -724,5 +728,62 @@ body {
     .footer-links {
         flex-direction: column;
         gap: 24px;
+    }
+}
+/* Botón hamburguesa */
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    margin-left: 16px;
+}
+.navbar-toggle span {
+    height: 4px;
+    width: 100%;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+@media (max-width: 900px) {
+    .navbar-toggle {
+        display: flex;
+    }
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #181818;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        z-index: 200;
+        padding-bottom: 18px;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+/* Íconos de redes sociales en una sola línea horizontal */
+.navbar-links li:last-child {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+.navbar-links li:last-child a {
+    padding: 0;
+    background: none !important;
+}
+@media (max-width: 900px) {
+    .navbar-links li:last-child {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 10px 0 10px 10px;
     }
 }
