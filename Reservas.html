@@ -47,7 +47,7 @@
                 <option value="miraflores">Miraflores</option>
             </select>
 
-            <label for="nombre">Nombre:</label>
+            <label for="nombre" style="">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
 
             <label for="telefono">Teléfono:</label>
@@ -69,5 +69,16 @@
 
         </form>
     </section> 
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const toggle = document.getElementById('navbar-toggle');
+    const links = document.querySelector('.navbar-links');
+    if (toggle && links) {
+        toggle.onclick = function() {
+            links.classList.toggle('active');
+        };
+    }
+});
+</script>
 </body>
 </html>
