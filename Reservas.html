@@ -37,6 +37,7 @@
     </nav>
     <section id="reservas-form">
         <h2>Reserva tu mesa</h2>
+            <span></span>
         <form id="reserva-form">
             <label for="local">Local:</label>
             <select id="local" name="local">
@@ -61,7 +62,11 @@
             <label for="hora">Hora:</label>
             <input type="time" id="hora" name="hora" required>
 
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea> 
+
             <button type="submit">Reservar</button>
+
         </form>
     </section> 
 </body>
