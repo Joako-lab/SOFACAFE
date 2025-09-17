@@ -243,6 +243,25 @@ body > * {
         text-decoration-color: #ffc83d;
     }
 }
+/* Íconos de redes sociales en una sola línea horizontal */
+.navbar-links li:last-child {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+.navbar-links li:last-child a {
+    padding: 0;
+    background: none !important;
+}
+@media (max-width: 900px) {
+    .navbar-links li:last-child {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 10px 0 10px 10px;
+    }
+}
 
 /* Hero Section */
 .hero-bg {
@@ -786,22 +805,3 @@ body > * {
     }
 }
 
-/* Íconos de redes sociales en una sola línea horizontal */
-.navbar-links li:last-child {
-    display: flex !important;
-    align-items: center;
-    gap: 12px;
-    padding: 0;
-}
-.navbar-links li:last-child a {
-    padding: 0;
-    background: none !important;
-}
-@media (max-width: 900px) {
-    .navbar-links li:last-child {
-        flex-direction: row !important;
-        justify-content: flex-start;
-        gap: 12px;
-        padding: 10px 0 10px 10px;
-    }
-}
