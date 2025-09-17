@@ -65,6 +65,11 @@ body {
     align-self: center;
     margin-top: 20px;
 }
+textarea {
+  width: 100%; /* Ajusta el ancho al 100% del contenedor */
+  height: 150px; /* Aumenta la altura a 150 píxeles */
+  min-height: 100px; /* Asegura una altura mínima */
+}
 .navbar {
     background-color: rgba(51, 51, 51, 0.7); /* Fondo semi-transparente */
     backdrop-filter: blur(1px); /* Difumina el contenido detrás */
@@ -138,11 +143,7 @@ body {
 .navbar-icon:hover {
     transform: scale(1.2);
 }
-textarea {
-  width: 100%; /* Ajusta el ancho al 100% del contenedor */
-  height: 150px; /* Aumenta la altura a 150 píxeles */
-  min-height: 100px; /* Asegura una altura mínima */
-}
+
 @media (max-width: 900px) {
     .navbar {
         padding: 4px 0;           /* Reduce el alto del navbar */
