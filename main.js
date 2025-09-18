@@ -8,3 +8,25 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     }
 });
+
+
+$(document).ready(function(){
+$('.burger-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    centerMode: true, // Activa el centrado
+    variableWidth: false,
+    autoplay: true,
+    autoplaySpeed: 3500,
+    speed: 300,
+    responsive: [
+    { breakpoint: 1200, settings: { slidesToShow: 3 } },
+    { breakpoint: 900, settings: { slidesToShow: 2 } },
+    { breakpoint: 600, settings: { slidesToShow: 1 } }
+    ]
+});
+
+});

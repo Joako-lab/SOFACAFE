@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <!-- Incluye en tu <head> o antes de cerrar </body> -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
 <body>
@@ -64,112 +68,130 @@
                 </p>
             </div>
             <div class="main-img">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Ambiente Sofá Café" />
+                <img src="LOCALES/MADGALENA/DSC_0010.png" alt="Ambiente Sofá Café" class="entorno" />
             </div>
         </div>
         <div class="main-grid">
             <div class="main-img">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Good Vibes" />
+                <img src="LOCALES/BARRANCO/DSC_0596.png" alt="Good Vibes" />
                 <h3>Good Vibes</h3>
                 <p>Ambiente cálido y acogedor para compartir grandes momentos.</p>
             </div>
             <div class="main-img">
-                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Cozy Place" />
+                <img src="LOCALES/PARDO/DSC_0668.png" alt="Cozy Place" />
                 <h3>Cozy Place</h3>
                 <p>Haz que todos se sientan como en casa y encuentren su ambiente ideal.</p>
             </div>
             <div class="main-img">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Relax" />
+                <img src="LOCALES/PATIO/DSC_0001.png" alt="Relax" />
                 <h3>Relax</h3>
                 <p>Disfruta de un espacio relajante y perfecto para conversar o trabajar.</p>
             </div>
         </div>
     </section>
 
-<!-- Menu Section - Carrusel de comidas destacadas -->
-<section class="menu-section">
-    <div class="menu-container">
-        <div class="menu-header">
-            <div class="menu-label">Nuestro Menú</div>
-            <h2 class="menu-title">Destacados Sofá Café</h2>
-            <p class="menu-desc">
-                Descubre nuestras comidas más populares y deliciosas.
+<section class="cus-favorite mb-80 py-40" id="tienda">
+    <div class="text-center">
+        <h2 class="mb-48" style="font-family:'Gilroy Bold'; color:#5f9c44;">NUESTRAS PLATOS Y MÁS</h2>
+    </div>
+    <div class="burger-slider">
+        <!-- Tarjeta ejemplo -->
+        <div class="box-1">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Smash Burger Bacon">
+            </div>
+            <div class="content-box">
+                <p class="content-text fw-600 mb-6">Ssdae</p>
+                <a href="#" class="h5 content-text-1 mb-24">BACON JALAPEÑO</a>
+                <p class="content-text mb-24">Doble smash burger, queso cheddar, cebolla crocante, tocino, jalapeños, salsa smash, salsa mex, pan artesanal y papas canchán frescas.</p>
+                <hr class="content-text mb-24">
+                <h4 class="content-text mb-32">S/ 29.90</h4>
+                <a href="#" class="cus-btn">ORDENAR AHORA</a>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Smash Burger Bacon">
+            </div>
+            <div class="content-box">
+                <p class="content-text fw-600 mb-6">Sdas</p>
+                <a href="#" class="h5 content-text-1 mb-24">BACON JALAPEÑO</a>
+                <p class="content-text mb-24">Doble smash burger, queso cheddar, cebolla crocante, tocino, jalapeños, salsa smash, salsa mex, pan artesanal y papas canchán frescas.</p>
+                <hr class="content-text mb-24">
+                <h4 class="content-text mb-32">S/ 29.90</h4>
+                <a href="#" class="cus-btn">ORDENAR AHORA</a>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Smash Burger Bacon">
+            </div>
+            <div class="content-box">
+                <p class="content-text fw-600 mb-6">SdaR</p>
+                <a href="#" class="h5 content-text-1 mb-24">BACON JALAPEÑO</a>
+                <p class="content-text mb-24">Doble smash burger, queso cheddar, cebolla crocante, tocino, jalapeños, salsa smash, salsa mex, pan artesanal y papas canchán frescas.</p>
+                <hr class="content-text mb-24">
+                <h4 class="content-text mb-32">S/ 29.90</h4>
+                <a href="#" class="cus-btn">ORDENAR AHORA</a>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Smash Burger Bacon">
+            </div>
+            <div class="content-box">
+                <p class="content-text fw-600 mb-6">SOFACEFE!</p>
+                <a href="#" class="h5 content-text-1 mb-24">BACON JALAPEÑO</a>
+                <p class="content-text mb-24">Doble smash burger, queso cheddar, cebolla crocante, tocino, jalapeños, salsa smash, salsa mex, pan artesanal y papas canchán frescas.</p>
+                <hr class="content-text mb-24">
+                <h4 class="content-text mb-32">S/ 29.90</h4>
+                <a href="#" class="cus-btn">ORDENAR AHORA</a>
+            </div>
+        </div>
+        <div class="box-1">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Smash Burger Bacon">
+            </div>
+            <div class="content-box">
+                <p class="content-text fw-600 mb-6">Psa</p>
+                <a href="#" class="h5 content-text-1 mb-24">BACON JALAPEÑO</a>
+                <p class="content-text mb-24">Doble smash burger, queso cheddar, cebolla crocante, tocino, jalapeños, salsa smash, salsa mex, pan artesanal y papas canchán frescas.</p>
+                <hr class="content-text mb-24">
+                <h4 class="content-text mb-32">S/ 29.90</h4>
+                <a href="#" class="cus-btn">ORDENAR AHORA</a>
+            </div>
+        </div>
+        <!-- Repite .box-1 para cada producto -->
+        <!-- ... -->
+    </div>
+</section>
+<!-- Redes Sociales Section -->
+<section class="social-section">
+    <div class="social-container">
+        <div class="social-header">
+            <div class="social-label">Síguenos en redes sociales</div>
+            <h2 class="social-title">¡Mira lo último en Instagram!</h2>
+            <p class="social-desc">
+                Descubre fotos, novedades y momentos Sofá Café en nuestras redes.
             </p>
         </div>
-        <div class="menu-carousel">
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Green Beans" class="menu-card-img">
-                <div class="menu-card-info">
-                    <strong>Lemon and Garlic Green Beans</strong>
-                    <div class="menu-card-sub">Lemon / Garlic / Beans</div>
-                    <div class="menu-card-price">S/ 15.00</div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Bacon Shrimp" class="menu-card-img">
-                <div class="menu-card-info">
-                    <strong>Bacon-wrapped Shrimp with Garlic</strong>
-                    <div class="menu-card-sub">Bacon / Shrimp / Garlic</div>
-                    <div class="menu-card-price">S/ 21.50</div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Kofka Skewers" class="menu-card-img">
-                <div class="menu-card-info">
-                    <strong>LAMB-BEEF KOFKA SKEWERS WITH TZATZIKI</strong>
-                    <div class="menu-card-sub">Lamb / Wine / Butter</div>
-                    <div class="menu-card-price">S/ 18.50</div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Oysters Grill" class="menu-card-img">
-                <div class="menu-card-info">
-                    <strong>Imported Oysters Grill (5 Pieces)</strong>
-                    <div class="menu-card-sub">Oysters / Veggie / Ginger</div>
-                    <div class="menu-card-price">S/ 20.00</div>
-                </div>
-            </div>
-            <!-- Agrega más tarjetas aquí -->
+        <div class="social-widget">
+            <!-- SnapWidget Instagram Feed (puedes cambiar el src por tu usuario) -->
+            <iframe src="https://snapwidget.com/embed/1053242" 
+                title="Instagram Sofá Café"
+                class="instagram-embed"
+                allowtransparency="true"
+                frameborder="0"
+                scrolling="no"
+                style="border:none; overflow:hidden; width:100%; min-height:400px;">
+            </iframe>
         </div>
-        <div class="menu-btn-container">
-            <a href="Carta.html" class="menu-btn">VER TODA LA CARTA</a>
+        <div class="social-btn-container">
+            <a href="https://instagram.com/sofacafeoficial/" target="_blank" class="social-btn">Ver en Instagram</a>
         </div>
     </div>
 </section>
 
-    <!-- Signature Section -->
-    <section class="signature-section">
-        <div class="signature-hero">
-            <div class="signature-hero-content">
-                <div class="signature-label">Homemade</div>
-                <h2 class="signature-title">Signature Menu</h2>
-                <p class="signature-desc">
-                    Neque elit, rutrum in laoreet nec eget scelerisque volutpat sit. Bibendum tincidunt a scelerisque consectetur ultrices elementum pulvinar non.
-                </p>
-            </div>
-        </div>
-        <div class="signature-gallery">
-            <div class="signature-img">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80" alt="Signature 1">
-            </div>
-            <div class="signature-img">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Signature 2">
-            </div>
-            <div class="signature-img">
-                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Signature 3">
-            </div>
-            <div class="signature-img">
-                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Signature 4">
-            </div>
-            <div class="signature-img">
-                <img src="https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?auto=format&fit=crop&w=600&q=80" alt="Signature 5">
-            </div>
-            <div class="signature-img">
-                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Signature 6">
-            </div>
-        </div>
-    </section>
-    
     <!-- Testimonials Section -->
     <section class="testimonials-section">
         <div class="testimonials-header">
