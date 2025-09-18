@@ -1,3 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: url("LOCALES/BARRANCO/DSC_0704.png") center/cover no-repeat fixed;
+    background-color: #f8f8f8cb;
+    padding-top: 70px; /* Para navbar fija */
+}
+.footer-section {
+    background: #181818;
+    color: #000000;
+    padding: 48px 0 24px 0;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+.footer-brand {
+    flex: 1 1 320px;
+    min-width: 260px;
+    margin-bottom: 24px;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.footer-desc {
+    color: #e0e0e0;
+    font-size: 1.08em;
+    margin-bottom: 18px;
+    opacity: 0.85;
+}
+.footer-links {
+    flex: 2 1 320px;
+    min-width: 260px;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.footer-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffc83d;
+}
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    margin-bottom: 6px;
+    display: inline-block;
+    transition: color 0.2s;
+}
+.footer-links a:hover {
+    color: #ffc83d;
+}
+@media (max-width: 900px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 18px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 18px;
+    }
+}
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(255,255,255,0.75);
+    pointer-events: none;
+    z-index: 0;
+}
+body > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Navbar clara */
+.navbar-light {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(3px);
+    color: #333;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ececec;
+}
+.navbar-logo {
+    margin-left: 40px;
+    transition: all 0.3s;
+    z-index: 200;
+}
+.navbar-logo img {
+    height: 60px;
+    transition: all 0.3s;
+}
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    height: 48px;
+    min-height: 48px;
+}
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+}
+.navbar-links li {
+    position: relative;
+}
+.navbar-links a {
+    color: #181818;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    color: #181818 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+.navbar-links a.active,
+.navbar-links a:hover {
+    background: #ffc83d;
+    color: #181818;
+}
+.navbar-btn {
+    background: #fff;
+    color: #181818 !important;
+    font-weight: 700;
+    padding: 8px 16px;
+    border-radius: 18px;
+    margin-left: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+.navbar-btn:hover {
+    background: #ffc83d;
+    color: #181818 !important;
+}
+.navbar-icon {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+    transition: transform 0.3s;
+    filter: invert(0.2);
+}
+.navbar-icon:hover {
+    transform: scale(1.2);
+}
+.navbar-toggle {
+    display: none;
+}
+@media (max-width: 900px) {
+    .navbar-logo img { height: 38px; }
+    .navbar-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 10px;
+        height: 32px;
+        width: 32px;
+    }
+    .navbar-toggle span {
+        display: block;
+        height: 3px;
+        width: 22px;
+        background: #a0522d;
+        margin: 4px 0;
+        border-radius: 2px;
+        transition: 0.3s;
+    }
+    .navbar-links {
+        flex-direction: column;
+        background: #181818;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100vw;
+        display: none;
+        margin: 0;
+        padding: 0;
+        z-index: 200;
+        border-bottom: 1px solid #ececec;
+        gap: 0;
+    }
+    .navbar-links.active {
+        display: flex;
+    }
+    .navbar-links li {
+        margin: 0;
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid #ececec;
+        padding: 12px 0 12px 16px;
+    }
+    .navbar-links a {
+        color: #fff;
+        background: none;
+        border-radius: 0;
+        padding: 12px 0 12px 16px;
+        width: 100%;
+        display: block;
+    }
+    .navbar-links a.active,
+    .navbar-links a:hover {
+        background: #ffc83d;
+        color: #181818;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 3px;
+        text-decoration-color: #ffc83d;
+    }
+}
+/* Íconos de redes sociales en una sola línea horizontal */
+.navbar-links li:last-child {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+}
+.navbar-links li:last-child a {
+    padding: 0;
+    background: none !important;
+}
+@media (max-width: 900px) {
+    .navbar-links li:last-child {
+        flex-direction: row !important;
+        justify-content: flex-start;
+        gap: 12px;
+        padding: 10px 0 10px 10px;
+    }
+}
+
 /* Nosotros */
 .nosotros-galeria {
     display: flex;
